@@ -83,6 +83,8 @@
     .open-hint { color: var(--muted); font-size: 14px; }
     .open-hint span { display: inline-block; margin-top: 8px; color: var(--gold-dark); }
     .invite { display: none; width: min(100%, 720px); margin: 0 auto; }
+    #invitationScreen { display: none; }
+    #invitationScreen.visible { display: grid; }
     .invite.visible { display: block; animation: rise .9s ease both; }
     @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
     .card {
@@ -172,10 +174,10 @@
           </div>
 
           <div class="photo-area" id="photoArea" aria-label="Мааракенин сүрөттөрү">
-            <!-- Сүрөт кошуу үчүн файлдарды images/photo1.jpg, images/photo2.jpg деп атаңыз.
+            <!-- Сүрөт кошуу үчүн файлдарды IMG_1827.png, IMG_1828.jpeg деп атаңыз.
                  Төмөндөгү src жолдорун өз файлдарыңызга ылайык өзгөртүңүз. -->
-            <img src="images/photo1.jpg" alt="Гүлүкан айымдын сүрөтү" onload="this.classList.add('has-image')" onerror="this.remove()">
-            <img src="images/photo2.jpg" alt="Мааракеге арналган сүрөт" onload="this.classList.add('has-image')" onerror="this.remove()">
+            <img src="IMG_1827.png" alt="Гүлүкан айымдын сүрөтү" onload="this.classList.add('has-image')" onerror="this.remove()">
+            <img src="IMG_1828.jpeg" alt="Мааракеге арналган сүрөт" onload="this.classList.add('has-image')" onerror="this.remove()">
           </div>
 
           <div class="rule"></div>
